@@ -1,0 +1,357 @@
+#hamburger {
+  display: none;
+}
+
+.category-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+
+.category-container select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  background: var(--background-light);
+  color: var(--dark-purple);
+  font-size: 0.9rem;
+  font-family: 'Lexend', sans-serif;
+  text-align: left;
+  text-align-last: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.category-container select:focus {
+  outline: none;
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 2px rgba(30, 96, 145, 0.2);
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.filter-section input {
+  width: 100%;
+  max-width: 200px;
+  padding: 0.5rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  text-align: left;
+  font-family: 'Lexend', sans-serif;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-buttons button,
+.filter-buttons a.button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--primary);
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  transition: var(--transition);
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--primary-dark);
+}
+
+.filter-buttons a.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.filter-buttons button:hover {
+  transition: var(--transition);
+  background-color: var(--primary-dark);
+}
+
+.filter-container {
+  margin-top: -5rem;
+  margin-bottom: 0.5em;
+}
+
+.category-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.25rem auto;
+  padding: 0;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(33.333% - 30px);
+  transition: transform 0.3s ease;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-header h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-family: 'Lexend';
+}
+
+.service-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.service-footer {
+  margin: 10px 0 0 0;
+  color: #666;
+  font-family: 'Lexend';
+  font-style: italic;
+}
+
+.service-footer p {
+  margin: 0 0 0.2rem 0;
+}
+
+.service-actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.service-actions .order, .service-actions p {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3D899C;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.service-actions .order:hover {
+    background-color: #346375;
+}
+
+.service-actions p {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+body {
+  font-family:'Lexend';
+  font-weight: 400;
+  background-color: #f0f9ff;
+  color: #1e3a8a;
+  margin: 0;
+  background-image: 
+      radial-gradient(circle at 10% 20%, rgba(147, 197, 253, 0.15) 0%, transparent 25%),
+      radial-gradient(circle at 90% 80%, rgba(147, 197, 253, 0.15) 0%, transparent 25%);
+}
+
+h1 {
+  color: #3b82f6;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2 {
+  color: #2563eb;
+  margin-top: 0;
+  font-size: 1.5em;
+  border-bottom: 2px dotted #93c5fd;
+  padding-bottom: 8px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.1);
+  border: 3px solid #bfdbfe;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+  border-color: #213657;
+}
+
+.card-header {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.card-header h3 {
+  color: #1e40af;
+  margin: 0 0 5px 0;
+  font-size: 1.3em;
+}
+
+.card-header .freelancer {
+  color: #3b82f6;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-category {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  margin: 5px 0;
+  border: 1px solid #93c5fd;
+}
+
+/* Delivery Time */
+.delivery-time {
+  color: #6b7280;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.price-filter {
+  background-color: #e0f2fe;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 2px dashed #3b82f6;
+}
+
+.price-filter h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-option {
+  background-color: white;
+  border: 2px solid #93c5fd;
+  border-radius: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-button {
+  background-color: #fecaca;
+  color: #991b1b;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.filter-section label {
+  font-weight: 500;
+  color: var(--dark-purple);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Lexend', sans-serif;
+  width: 100%;
+  text-align: left;
+}
+
+.filter-section input,
+.category-container select {
+  font-size: 1rem;
+  font-family: 'Lexend', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .service-card,
+  .service-item {
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 0.95rem;
+    padding: 1.5rem 1rem;
+    line-height: 1.7;
+  }
+
+  .profile-container {
+    padding: 0.75rem;
+  }
+}

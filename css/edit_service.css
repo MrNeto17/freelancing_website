@@ -1,0 +1,77 @@
+@import 'fonts.css';
+
+.service-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 3px solid #bfdbfe;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    color: #334155;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+
+
+.service-form label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #173186;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+
+.service-form input[type="text"],
+.service-form input[type="number"],
+.service-form select,
+.service-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #334155;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical;
+}
+
+.service-form input[type="text"]:focus,
+.service-form input[type="number"]:focus,
+.service-form select:focus,
+.service-form textarea:focus {
+    border-color: #1e3a8a;
+    outline: none;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+}
+
+.service-form textarea {
+    min-height: 120px;
+    line-height: 1.4;
+}
+
+.service-form button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #26386b;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.service-form button[type="submit"]:hover {
+    background-color: #151e50;
+}

@@ -1,0 +1,683 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: 'Lexend';
+    background-color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 3px solid #bfdbfe;
+}
+
+.profile-container h1 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.profile-container h2 {
+    text-align: center;
+}
+
+.profile-container .user-role {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.profile-container .user-rating {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-section, .transactions-section {
+    background-color: var(--background);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 15px;
+    border: 2px solid #bfdbfe;
+}
+
+
+.info-section.empty-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-style: italic;
+}
+
+.empty-message {
+    margin: 20px 0; 
+    color: #64748b;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+.edit-button-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.edit-profile-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #26386b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Lexend';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.edit-profile-btn:hover {
+    background-color: #151e50;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.info-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Lexend';
+    color: #173186;
+    margin-bottom: 5px;
+    min-width: 100px;
+}
+
+
+.info-value {
+    color: #334155;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.section-header {
+    color: #1e3a8a;
+    font-family: 'Lexend';
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bfdbfe;
+    text-align: center;
+}
+
+.transactions-section.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-style: italic;
+}
+
+.freelancer-services {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.1);
+    border: 3px solid #bfdbfe;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+    border-color: #213657;
+}
+
+.card-header {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card-header h3 {
+    color: #1e40af;
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+}
+
+.card-header .freelancer {
+    color: #3b82f6;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-category {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin: 5px 0;
+    border: 1px solid #93c5fd;
+}
+
+.delivery-time {
+    color: #6b7280;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.service-details p {
+    margin: 5px 0;
+    color: #555;
+    font-family: 'Lexend', sans-serif;
+}
+
+.service-footer p {
+    margin: 10px 0 0 0;
+    color: #666;
+    font-family: 'Lexend', sans-serif;
+    font-style: italic;
+}
+
+.service-actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.service-actions .order,
+.service-actions p {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3D899C;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.service-actions .order:hover {
+    background-color: #346375;
+}
+
+.service-actions p {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.reviews-section {
+    max-width: 900px;
+    margin: 20px auto; 
+    padding: 0 15px;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    font-family: 'Lexend';
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.reviews-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #bfdbfe;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    padding: 20px;
+    font-family: 'Lexend', sans-serif;
+    color: #334155;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+}
+
+.review-card .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #1e40af;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.review-card .review-text {
+    font-weight: 500;
+    color: #475569;
+    white-space: pre-wrap;
+}
+
+.review-stars {
+    color: #3b82f6;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.freelancer-bio .info-value {
+    white-space: pre-wrap; 
+    font-weight: 600; 
+    color: #334155;
+}
+
+.no-description {
+    font-style: italic;
+    color: #64748b;
+}
+
+.info-item.freelancer-bio {
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-item.freelancer-bio .info-label {
+    width: 100px; 
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #173186;
+    margin-top: 4px; 
+    line-height: 1.2;
+}
+
+.info-item.freelancer-bio .info-value {
+    font-weight: 600;
+    color: #334155;
+    white-space: pre-wrap;
+    flex: 1; 
+    line-height: 1.4;
+}
+
+
+.message-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #26386b; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Lexend';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.message-btn:hover {
+    background-color: #151e50;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
+.button-link {
+    background-color: #0f172a;
+    color: #f1f5f9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background-color: #1e293b;
+}
+
+.info-section {
+    background-color: var(--background);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 100%;
+    border: 2px solid #bfdbfe;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+.info-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #173186;
+    min-width: 100px;
+}
+
+.info-value {
+    color: #334155;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.section-header {
+    color: #1e3a8a;
+    font-family: 'Lexend';
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bfdbfe;
+    text-align: center;
+}
+
+.transaction-card {
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    background-color: var(--background, #f9fafb);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    color: #334155;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+}
+
+.transaction-card .info-label {
+    min-width: 140px;
+    color: #173186;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.transaction-card .info-value p {
+    margin: 4px 0;
+}
+
+.transaction-card a.button-link {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.transaction-card a.button-link:hover {
+    background-color: #1e293b;
+}
+
+.status-completed {
+    color: #16a34a; 
+    font-weight: 700;
+}
+
+.status-pending {
+    color: #ca8a04; 
+    font-weight: 700;
+}
+
+.status-cancelled, 
+.status-failed {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.transaction-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.1);
+    border: 3px solid #bfdbfe;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Lexend', sans-serif;
+    color: #334155;
+    font-weight: 600;
+}
+
+.transaction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+    border-color: #213657;
+}
+
+.transaction-card .card-header {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.transaction-card .card-header h3 {
+    color: #1e40af;
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+}
+
+.transaction-card .card-header .freelancer {
+    color: #3b82f6;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.transaction-card .card-category {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin: 5px 0;
+    border: 1px solid #93c5fd;
+}
+
+.transaction-card .delivery-time {
+    color: #6b7280;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.transaction-card .service-details p {
+    margin: 5px 0;
+    color: #555;
+    font-family: 'Lexend', sans-serif;
+}
+
+.transaction-card .service-footer p {
+    margin: 10px 0 0 0;
+    color: #666;
+    font-family: 'Lexend', sans-serif;
+    font-style: italic;
+}
+
+.transaction-card .service-actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.transaction-card .service-actions .order,
+.transaction-card .service-actions p {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3D899C;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.status-completed {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.status-pending {
+    color: #ca8a04;
+    font-weight: 700;
+}
+
+.status-cancelled,
+.status-failed {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  .profile-container h1 {
+    font-size: 24px;
+  }
+
+  .profile-container h2.section-header,
+  .section-header {
+    font-size: 18px;
+  }
+
+  .info-item,
+  .info-item.freelancer-bio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-label,
+  .info-item.freelancer-bio .info-label {
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+
+  .info-value,
+  .info-item.freelancer-bio .info-value {
+    padding-left: 0;
+  }
+
+  .edit-profile-btn,
+  .message-btn,
+  .button-link {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-card,
+  .transaction-card,
+  .review-card {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .card-header h3 {
+    font-size: 1.1em;
+  }
+
+  .card-category,
+  .delivery-time {
+    font-size: 0.85em;
+  }
+
+  .review-stars {
+    font-size: 1rem;
+  }
+
+  .reviews-section h2 {
+    font-size: 20px;
+  }
+
+  .transaction-card .info-label {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
+  .transaction-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transaction-card .card-header h3 {
+    font-size: 1.1em;
+  }
+
+  .transaction-card .service-details p,
+  .transaction-card .service-footer p {
+    font-size: 0.95rem;
+  }
+
+  .review-card .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 0.9rem;
+  }
+}

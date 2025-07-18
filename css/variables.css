@@ -1,0 +1,20 @@
+/* ===== Variables ===== */
+:root {
+    --primary: #1E6091;
+    --primary-dark: #003049;
+    --secondary: #4CAF50;
+    --secondary-dark: #45a049;
+    --copyright: #1E6B7F;
+    --dark-purple: #37143f;
+    --dark-yellow: #FFB703;
+    --button-dblue: #003161;
+    --button-hover-dblue: #071e35;
+    --background-light: #fcfffd;
+    --background: #f8f9fa;
+    --text: #2d3436;
+    --card-bg: #fff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 0.9rem;
+    --transition: all 0.3s ease;
+    --font-family: 'Lexend', sans-serif;
+  }

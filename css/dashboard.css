@@ -1,0 +1,229 @@
+@import 'fonts.css';
+
+.admin-dashboard {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: 'Lexend', sans-serif;
+    background-color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 3px solid #bfdbfe;
+    box-sizing: border-box;
+}
+
+.admin-dashboard h2 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.admin-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: #dbeafe;
+    border: 2px solid #93c5fd;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #1e40af;
+    font-weight: 600;
+    flex: 1 1 120px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.stat-box strong {
+    color: #334155;
+    font-weight: 700;
+}
+
+
+#add-category-form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#add-category-form label {
+    flex-shrink: 0;
+    align-self: center;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+#add-category-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    color: #334155;
+    transition: border-color 0.2s;
+}
+
+#add-category-form input[type="text"]:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+#add-category-form button {
+    padding: 10px 20px;
+    background-color: #26386b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-category-form button:hover {
+    background-color: #151e50;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+.category-table thead tr {
+    border-bottom: 2px solid #bfdbfe;
+}
+
+.category-table th {
+    color: #1e3a8a;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.category-table tbody tr {
+    background-color: white;
+    border: 3px solid #bfdbfe;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.category-table tbody tr:hover {
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+}
+
+.category-table tbody td {
+    padding: 15px 20px;
+    color: #334155;
+}
+
+.category-table button {
+    background-color: #d14343;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.category-table button:hover {
+    background-color: #a62b2b;
+}
+
+.category-table thead th:last-child,
+.category-table tbody td:last-child {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.admin-role-change {
+    margin-top: 40px;
+    background-color: white;
+    border: 3px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.role-change-title {
+    color: #1e3a8a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.role-change-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.role-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e40af;
+}
+
+.role-input, .role-select {
+    padding: 10px 15px;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    color: #334155;
+    transition: border-color 0.2s;
+}
+
+.role-input:focus, .role-select:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+.change-role-btn {
+    align-self: center;
+    padding: 12px 30px;
+    background-color: #26386b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.change-role-btn:hover {
+    background-color: #151e50;
+}

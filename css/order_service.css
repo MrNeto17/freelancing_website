@@ -1,0 +1,289 @@
+body {
+    font-family: 'Lexend', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f9ff;
+    color: #334155;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    background-image: 
+        radial-gradient(circle at 10% 90%, rgba(147, 197, 253, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 90% 10%, rgba(147, 197, 253, 0.15) 0%, transparent 25%);
+}
+
+h1 {
+    color: #3b82f6;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.service-header h2 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 3px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.section-header {
+    color: #1e3a8a;
+    font-family: 'Lexend';
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bfdbfe;
+    text-align: center;
+}
+
+.main-content,
+.service-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 12px;
+    border: 3px solid #bfdbfe;
+    font-family: 'Lexend';
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.service-container h1 {
+    color: #1e3a8a;
+    font-size: 34px;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+}
+
+.service-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+.service-info,
+.order-form,
+.service-section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid #bfdbfe;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    font-size: 17px;
+    text-align: center;
+}
+
+.service-description {
+    background-color: #f6fdfd;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px auto;
+    border: 2px solid #bfdbfe;
+}
+
+.service-section.empty-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-style: italic;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 700;
+    color: #1e3a8a;
+    font-size: 1rem;
+}
+
+.form-group,
+.service-form label,
+.service-form input,
+.service-form textarea,
+.service-form select {
+    display: block;
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.service-form label {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1e40af;
+    font-family: 'Lexend';
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;       
+    max-width: 400px; 
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 2px solid #93c5fd;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+.price-display {
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px dashed #3b82f6;
+}
+
+.price-display span {
+    font-size: 1.3em;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.service-actions .order,
+.order-service-btn,
+.service-form button,
+.submit-button {
+    background-color: #26386b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Lexend';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    text-decoration: none;
+}
+
+.pay-now {
+    background-color: #58266b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Lexend';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    width: auto;
+    padding: 12px 24px;    
+}
+
+.pay-now:hover {
+    background-color: #3a1550;
+}
+
+.freelancer-name-link {
+    color: #3b82f6;      
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .freelancer-name-link:hover {
+    color: #1e3a8a;       
+  }
+  
+.submit-button:hover,
+.service-actions a:hover,
+.service-actions button:hover,
+.service-form button:hover {
+    background-color: #151e50;
+}
+
+.service-actions {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.service-actions .edit,
+.edit-service-btn {
+    background-color: #334155;
+}
+
+.service-actions .delete-service-btn {
+    background-color: #991b1b;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-label {
+    font-weight: 600;
+    font-family: 'Lexend';
+    color: #1e40af;
+    margin-bottom: 5px;
+    min-width: 140px;
+}
+
+.info-value {
+    color: #334155;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.info-value a {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info-value a:hover {
+    text-decoration: underline;
+}
+
+.decorative span {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.5em;
+    color: #3b82f6;
+    animation: bounce 2s infinite;
+}
+
+.empty-message {
+    margin: 20px 0;
+    color: #64748b;
+    font-style: italic;
+}
+

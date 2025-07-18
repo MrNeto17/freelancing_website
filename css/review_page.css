@@ -1,0 +1,93 @@
+@import 'fonts.css';
+
+.review-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 3px solid #bfdbfe;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.1);
+}
+
+.review-form .form-group {
+    margin-bottom: 20px;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    color: #334155;
+    font-weight: 500;
+    transition: border-color 0.2s;
+}
+
+.review-form select:focus,
+.review-form textarea:focus {
+    outline: none;
+    border-color: #1e3a8a;
+    background-color: #ffffff;
+}
+
+.review-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.review-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.review-form .btn-submit,
+.review-form .btn-cancel {
+    padding: 12px 24px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.review-form .btn-submit {
+    background-color: #26386b;
+    color: white;
+}
+
+.review-form .btn-submit:hover {
+    background-color: #151e50;
+}
+
+.review-form .btn-cancel {
+    background-color: #e2e8f0;
+    color: #1e3a8a;
+    border: 2px solid #bfdbfe;
+}
+
+.review-form .btn-cancel:hover {
+    background-color: #cbd5e1;
+    color: #1e3a8a;
+}

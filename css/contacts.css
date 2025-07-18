@@ -1,0 +1,63 @@
+@import 'fonts.css';
+
+#contacts {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: 'Lexend', sans-serif;
+    background-color: white;
+    border-radius: 12px;
+    border: 3px solid #bfdbfe;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+#contacts h1 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts .contact-side {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+#contacts .contact-side:hover {
+    background-color: #f1f5f9;
+    border-color: #bfdbfe;
+}
+
+#contacts .contact-side a {
+    text-decoration: none;
+    color: #1e40af;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    transition: color 0.2s;
+    text-align: center;
+}
+
+#contacts .contact-side a:hover {
+    color: #1e3a8a;
+}
+
+#contacts .empty-contacts {
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+    padding: 20px 0;
+}

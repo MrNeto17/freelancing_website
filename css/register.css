@@ -1,0 +1,116 @@
+@import 'variables.css';
+@import 'fonts.css';
+
+.register-form {
+    max-width: 600px; 
+    margin: 2rem auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    border: 3px solid #bfdbfe; 
+    box-sizing: border-box;
+    color: #334155; 
+}
+
+.register-form h1 {
+    color: #1e3a8a; 
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.register-form .form-group {
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #173186;
+    margin-bottom: 6px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    color: #334155;
+    background-color: #f9fafb;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.register-form input[type="text"]::placeholder,
+.register-form input[type="email"]::placeholder,
+.register-form input[type="password"]::placeholder,
+.register-form select option {
+    color: #64748b; 
+    font-weight: 500;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus,
+.register-form select:focus {
+    outline: none;
+    border-color: #1e40af;
+    background-color: #fff;
+}
+
+.register-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg fill='%233b82f6' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+}
+
+.register-form button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    background-color: #266b35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(38, 56, 107, 0.2);
+}
+
+.register-form button:hover {
+    background-color: #1a5015;
+}
+
+.register-form a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #3b82f6;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
