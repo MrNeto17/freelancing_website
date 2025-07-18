@@ -1,4 +1,3 @@
-template de readme
 # ltw03g04
 
 ## Features
