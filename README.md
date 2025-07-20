@@ -1,4 +1,3 @@
-# ltw03g04
 
 ## Features
 
